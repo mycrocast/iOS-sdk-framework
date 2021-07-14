@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		IiPDEAJD5rzHoOJwrNFjjujVh/k=
+		mJSK/LHjskLYG7SBnnW3gB2u8a0=
 		</data>
 		<key>Headers/MycrocastSDK-Swift.h</key>
 		<data>
@@ -28,14 +28,6 @@
 		<data>
 		qTAzcRO2tztM5cJYHg5k6rZ+6g4=
 		</data>
-		<key>Modules/MycrocastSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
-		<data>
-		AQ/p1vVl8nsvszxYCyUXgRVP/j4=
-		</data>
-		<key>Modules/MycrocastSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
-		<data>
-		AQ/p1vVl8nsvszxYCyUXgRVP/j4=
-		</data>
 		<key>Modules/MycrocastSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
 		XOeW0MC9QW1tSdQG3bJUstmDaGw=
@@ -46,7 +38,7 @@
 		</data>
 		<key>Modules/MycrocastSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		o/C5hS+o5+VQdrq7eOMD9hzAf9s=
+		YT0VNL560q4cR5DF7S2AnMMxDxU=
 		</data>
 		<key>Modules/MycrocastSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -58,7 +50,7 @@
 		</data>
 		<key>Modules/MycrocastSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		o/C5hS+o5+VQdrq7eOMD9hzAf9s=
+		YT0VNL560q4cR5DF7S2AnMMxDxU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -147,7 +139,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cck3GAx5ify+DWEkj0qiTfrRQScOdDlHqGPmiO9slOI=
+			ldCYKOiupP0bvuWDFTx/msP1XLAOldhAspDI34BfKmM=
 			</data>
 		</dict>
 		<key>Headers/MycrocastSDK-Swift.h</key>
@@ -178,20 +170,6 @@
 			YGhan58wvMANY2rddAcO7+JpFjwlPTBVQrEVdB3lfQY=
 			</data>
 		</dict>
-		<key>Modules/MycrocastSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xwe/j2latykJIrc8K4BKV1OUi4fCajZfiqzj3sHIkJI=
-			</data>
-		</dict>
-		<key>Modules/MycrocastSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xwe/j2latykJIrc8K4BKV1OUi4fCajZfiqzj3sHIkJI=
-			</data>
-		</dict>
 		<key>Modules/MycrocastSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
@@ -210,7 +188,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VaGxMyc5vjez24scul+ivELTRM6mPcffgSPke63gXX8=
+			iohWfQHaMEYY8ez+8JaKJTgu+tx/Q9vmKhYU5utSOvo=
 			</data>
 		</dict>
 		<key>Modules/MycrocastSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -231,7 +209,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VaGxMyc5vjez24scul+ivELTRM6mPcffgSPke63gXX8=
+			iohWfQHaMEYY8ez+8JaKJTgu+tx/Q9vmKhYU5utSOvo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
