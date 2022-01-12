@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MycrocastSDK
 import AVFoundation
 import MycrocastSDK.CLibgif
@@ -9,6 +9,7 @@ import MQTTClient
 import Swift
 import SystemConfiguration
 import UIKit
+import _Concurrency
 @_hasMissingDesignatedInitializers final public class Mycrocast {
   public static let shared: MycrocastSDK.Mycrocast
   final public var sessionEstablished: Swift.Bool {
@@ -29,7 +30,7 @@ import UIKit
   final public var advertisements: MycrocastSDK.Advertisements {
     get
   }
-  final public func start(apiKey: Swift.String, customerToken: Swift.String, callback: @escaping ([MycrocastSDK.LiveStream], MycrocastSDK.MycrocastError?) -> ())
+  final public func start(apiKey: Swift.String, customerToken: Swift.String, callback: @escaping (_ streams: [MycrocastSDK.LiveStream], _ error: MycrocastSDK.MycrocastError?) -> ())
   final public func terminate()
   @objc deinit
 }
@@ -133,7 +134,7 @@ public struct Team : Swift.Codable {
   public var muteMusicUrl: Swift.String
   @objc deinit
 }
-extension LiveStream {
+extension MycrocastSDK.LiveStream {
   public func header() -> Foundation.URL?
   public func logo() -> Foundation.URL?
 }
@@ -191,17 +192,17 @@ public enum Sender {
     get
   }
 }
-extension Message {
+extension MycrocastSDK.Message {
   public func getSender() -> MycrocastSDK.Sender
 }
 public protocol Chat {
-  func joinChat(streamId: Swift.Int, callback: @escaping ([MycrocastSDK.Message], MycrocastSDK.ChatStatus, MycrocastSDK.MycrocastError?) -> ())
+  func joinChat(streamId: Swift.Int, callback: @escaping (_ messages: [MycrocastSDK.Message], _ chatStatus: MycrocastSDK.ChatStatus, _ error: MycrocastSDK.MycrocastError?) -> ())
   func leaveChat(streamId: Swift.Int)
   func chatJoined(streamId: Swift.Int) -> Swift.Bool
-  func sendChatMessage(streamId: Swift.Int, message: Swift.String, callback: @escaping (Swift.Bool, MycrocastSDK.MycrocastError?) -> ())
+  func sendChatMessage(streamId: Swift.Int, message: Swift.String, callback: @escaping (_ success: Swift.Bool, _ error: MycrocastSDK.MycrocastError?) -> ())
   func getChatMessages(streamId: Swift.Int) -> [MycrocastSDK.Message]
   func getChatStatus(streamId: Swift.Int) -> MycrocastSDK.ChatStatus
-  func reportChatMessage(message: MycrocastSDK.Message, reason: MycrocastSDK.ReportReason, additionalInformation: Swift.String, callback: @escaping (Swift.Bool, MycrocastSDK.MycrocastError?) -> ())
+  func reportChatMessage(message: MycrocastSDK.Message, reason: MycrocastSDK.ReportReason, additionalInformation: Swift.String, callback: @escaping (_ success: Swift.Bool, _ error: MycrocastSDK.MycrocastError?) -> ())
   func addObserver(delegate: MycrocastSDK.ChatDelegate)
   func removeObserver(delegate: MycrocastSDK.ChatDelegate)
 }
